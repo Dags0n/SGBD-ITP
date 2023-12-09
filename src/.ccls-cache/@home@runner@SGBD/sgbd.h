@@ -92,7 +92,7 @@ void makeTable() {
 
     printf("New colum [Y/N]: ");
     scanf("%s%c", &option, &trash);
-    if (option == 'N') {
+    if (tolower(option) == 'n') {
       fprintf(table, "\n");
       break;
     }
